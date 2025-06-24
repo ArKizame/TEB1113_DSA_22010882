@@ -1,3 +1,8 @@
+//id:22010882
+//name:muhammad Aliff Haiqal 
+//G1
+
+
 #include <iostream>
 #include <string>
 using namespace std;
