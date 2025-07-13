@@ -8,7 +8,7 @@ using namespace std;
 
 class Queue {
 private:
-    static const int SIZE = 100; // Maximum queue size
+    static const int SIZE = 100; 
     string arr[SIZE];
     int front;
     int rear;
@@ -74,7 +74,7 @@ int main() {
 
     Queue q;
 
-    // Enqueue names as requested
+    
     q.enqueue("Qaman");
     q.enqueue("Hackyboi");
     q.enqueue("Ali");
