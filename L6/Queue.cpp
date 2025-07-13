@@ -53,7 +53,7 @@ public:
         delete temp;
 
         if (!front) {
-            rear = nullptr; // Queue is now empty
+            rear = nullptr; 
         }
     }
 
@@ -79,18 +79,14 @@ int main() {
     cout << "Queue Using Linked List" << endl;
     Queue q;
 
-    // Enqueue names
     q.enqueue("Qaman");
     q.enqueue("Hackyboi");
     q.enqueue("Ali");
 
-    // Display queue
     q.display_queue();
 
-    // Dequeue one item
     q.dequeue();
 
-    // Display after dequeue
     cout << "After dequeueing:" << endl;
     q.display_queue();
 
