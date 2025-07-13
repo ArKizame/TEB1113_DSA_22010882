@@ -94,23 +94,18 @@ public:
 int main() {
     cout << "Stack Using Linked List" << endl;
 
-    Stack stack(4); // Max 4 elements
+    Stack stack(4); 
 
-    // Push names
     stack.push("Qaman");
     stack.push("Hackyboi");
     stack.push("Ali");
-
-    // Peek top
+    
     stack.peek();
 
-    // Display current stack
     stack.display_stack();
 
-    // Pop top
     stack.pop();
 
-    // Peek and display after pop
     stack.peek();
     stack.display_stack();
 
