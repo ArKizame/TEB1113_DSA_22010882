@@ -31,7 +31,6 @@ public:
         tail = nullptr;
     }
 
-    // Add new node at the end
     void add_element(string name) {
         Node* new_node = new Node(name);
 
@@ -48,7 +47,6 @@ public:
         }
     }
 
-    // Display list forward
     void display_forward() {
         if (!head) {
             cout << "List is empty." << endl;
@@ -63,7 +61,6 @@ public:
         cout << "(back to head: " << head->name << ")" << endl;
     }
 
-    // Display list backward
     void display_backward() {
         if (!tail) {
             cout << "List is empty." << endl;
@@ -78,7 +75,6 @@ public:
         cout << "(back to tail: " << tail->name << ")" << endl;
     }
 
-    // Delete node by name
     void delete_by_value(string val) {
         if (!head) return;
 
@@ -95,18 +91,15 @@ public:
 
         if (!to_delete) return;
 
-        // Only one node
         if (head == tail && head->name == val) {
             delete head;
             head = tail = nullptr;
             return;
         }
 
-        // Remove links
         to_delete->prev_ptr->next_ptr = to_delete->next_ptr;
         to_delete->next_ptr->prev_ptr = to_delete->prev_ptr;
 
-        // Update head or tail if needed
         if (to_delete == head) head = to_delete->next_ptr;
         if (to_delete == tail) tail = to_delete->prev_ptr;
 
